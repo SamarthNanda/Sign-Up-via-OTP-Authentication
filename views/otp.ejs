@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <h1 class="display-5">Enter the OTP which is sent to your Email.</h1>
+    <hr>
+
+    <form action="/otp" method="POST">
+      <div class="form-group otpDiv">
+        <label for="number">OTP</label>
+        <input type="number" class="form-control" name="otp" required>
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+  </div>
+</div>
+
+<%- include('partials/footer') %>
